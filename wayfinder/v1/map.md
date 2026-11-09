@@ -35,6 +35,9 @@ Building happens outside the map.
 
 ## Decisions so far
 
+- [Can Neversoft's LZSS compression be reproduced byte for byte?](issues/01-reproduce-lzss.md): yes, Okumura's LZSS.C with a 0x20-filled ring; buffer reset per entry differs between installs
+- [Does nspre write THUG2 and THUG Pro archives byte-identical?](issues/02-nspre-write-fidelity.md): no, 0 archives match; port its structure, fix hashing, padding, compression and the ring fill
+
 ## Not yet specified
 
 - prxhawk's public API.
